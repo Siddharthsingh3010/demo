@@ -1,0 +1,37 @@
+@media (min-width: 992px) {
+    .main {
+        margin-left: 275px;
+        margin-top: 5px;
+        width: auto;
+    }
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+li {
+    padding: 10px;
+    margin: 5px;
+    transition: 1s;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+li:hover {
+    background: rgba(3, 3, 3, 0.381);
+    transform: scale(1.1);
+}
+
+i {
+    padding: 5px;
+}
+
+.row {
+    margin: 5px;
+}

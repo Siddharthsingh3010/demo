@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <title>JQuery mobile</title>
+</head>
+
+<body>
+    <!-- Home page -->
+
+    <div data-role="page" id="home">
+        <!-- header -->
+        <div data-role="header">
+            <h1>Sinhgad college of Engineering</h1>
+            <h3>NAAC Accredited With Grade-"A+"<br>Center of Excellence for Best institution in Maharashtra and
+                <br>Certificate of merit for Third Best institution in India
+            </h3>
+        </div>
+        <!-- navbar -->
+        <div data-role="navbar" data-grid="b"><!-- data divided into 4 col -->
+            <ul>
+                <li><a href="#home" class="ui-btn-active">Home</a></li>
+                <li><a href="#dept">Department</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- content -->
+        <div id="contentOfThisDiv1" data-role="content"
+            style=" border: 2px solid; border-radius: 2%; margin-top: 10px;">
+            <h3 style="text-align: center; color:orange; cursor: pointer;" id="tag1">Welcome to SCOE</h3>
+            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsam,
+                quis ex maxime et sit quidem similique laudantium vel tempora tempore deserunt, odio perspiciatis hic
+                quibusdam non quia fugit sunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum velit accusantium impedit at eaque
+                aliquid amet, accusamus sit labore provident asperiores? Alias voluptatum accusantium incidunt quisquam,
+                similique iure nostrum quaerat.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti reprehenderit illo in assumenda
+                corrupti quod eveniet, quidem repudiandae omnis modi repellat ex, dolores, ab quae rerum pariatur
+                inventore natus perferendis.
+            </p>
+        </div>
+
+        <div id="contentOfThisDiv2" data-role="content"
+            style=" border: 2px solid;  border-radius: 2%; margin-top: 10px;">
+            <h3 style="text-align: center; color:orange; cursor: pointer;" id="tag2">Vision</h3>
+            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsam,
+                quis ex maxime et sit quidem similique laudantium vel tempora tempore deserunt, odio perspiciatis hic
+                quibusdam non quia fugit sunt.
+            </p>
+        </div>
+        <!-- footer -->
+        <div data-role="footer">
+            <h3>Quick Access</h3>
+            <div style="text-align: center;">
+                <a href="#home">Home</a><br>
+                <a href="#dept">Department</a><br>
+                <a href="#contact">Contact</a><br>
+            </div>
+        </div>
+    </div>
+    <!-- ********************************************************************************************** -->
+    <!--Dept Page  -->
+    <div data-role="page" id="dept">
+        <!-- header -->
+        <div data-role="header">
+            <h1>Sinhgad college of Engineering</h1>
+            <h3>NAAC Accredited With Grade-"A+"<br>Center of Excellence for Best institution in Maharashtra and
+                <br>Certificate of merit for Third Best institution in India
+            </h3>
+        </div>
+        <!-- Navabr -->
+        <div data-role="navbar" data-grid="b">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#dept" class="ui-btn-active">dept</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+        <!-- content -->
+        <div data-role="content">
+            <div id="flip">Information Technology</div>
+            <div id="panel"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <style>
+                #panel,
+                #flip {
+                    padding: 5px;
+                    text-align: center;
+                    background-color: #e5eecc;
+                    border: solid 1px #c3c3c3;
+                    cursor: pointer;
+                }
+
+                #panel {
+                    padding: 50px;
+                    display: none;
+                }
+            </style>
+        </div>
+
+        <!-- footer -->
+        <div data-role="footer">
+            <h3>Quick Access</h3>
+            <div style="text-align: center;">
+                <a href="#home">Home</a><br>
+                <a href="#dept">Department</a><br>
+                <a href="#contact">Contact</a><br>
+            </div>
+        </div>
+
+    </div>
+    <!-- *********************************************************************************** -->
+    <!-- contact -->
+    <div data-role="page" id="contact">
+        <!-- header -->
+        <div data-role="header">
+            <h1>Sinhgad College of Enginnering,Pune</h1>
+        </div>
+        <!-- navbar -->
+        <div data-role="navbar" data-grid="b">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#dept">dept</a></li>
+                <li><a href="#contact" class="ui-btn-active">contact</a></li>
+            </ul>
+
+        </div>
+        <!-- content -->
+        <div data-role="content">
+
+            <label for="">enter the name</label>
+            <input type="text" placeholder="Full Name">
+
+            <label for="">mobile</label>
+            <input type="text" placeholder="Mobile No.">
+
+            <label for=""> email</label>
+            <input type="email" placeholder="Email">
+
+            <label for=""> password</label>
+            <input type="password" placeholder="Password">
+
+            <button class="ui-btn-action Submit-btn" data-icon="arrow-r" data-inline="true"
+                data-mini="true">Submit</button>
+            <div class="in"></div>
+
+        </div>
+
+        <!-- footer -->
+        <div data-role="footer">
+            <h3>Quick Access</h3>
+            <div style="text-align: center;">
+                <a href="#home">Home</a><br>
+                <a href="#dept">Department</a><br>
+                <a href="#contact">Contact</a><br>
+            </div>
+        </div>
+
+        <!-- Script -->
+        <script>
+
+
+            $(".Submit-btn").on("click", function () {
+                $(".in").html("Your Form is Submitted Successfully");
+            });
+
+
+            $("#tag1").click(function () {
+                $("#contentOfThisDiv1").hide();
+            });
+
+
+
+            $("#tag2").click(function () {
+                $("#contentOfThisDiv2").hide();
+            });
+
+
+
+            $("#flip").click(function () {
+                $("#panel").slideDown();
+            });
+
+        </script>
+
+</body>
+
+</html>
